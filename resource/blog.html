@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-Hero Tube|| Blog</title>
+
+    <link rel="shortcut icon" href="../resource/favicon.png" type="image/x-icon">
+
+    <!-- Inter Font import from Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Daisy UI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Color Customize -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'base-color': '#FF1F3D',
+                        'base-background-color': '#25252521',
+                        'detail-color': '#171717B3'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Common CSS Styles -->
+    <style>
+        .inter-font {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn:hover {
+            background-color: #FF1F3D;
+            color: white;
+        }
+
+        .selected {
+            background-color: #FF1F3D;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="inter-font">
+    <!-- Header Section Starts Here  -->
+    <header class="w-5/6 mx-auto">
+        <div
+            class="flex flex-col md:flex-row lg:flex-row space-y-3 lg:space-y-0 md:space-y-0 justify-between pt-[50px] pb-[32px] items-center">
+            <div>
+                <a href="../index.html"><img src="../resource/Logo.png" alt=""></a>
+            </div>
+            <div>
+                <a class="btn bg-base-color text-white hover:text-black" href="#">Blog</a>
+            </div>
+        </div>
+        <hr class="pb-[32px]">
+    </header>
+
+    <!-- Main Section Starts Here  -->
+    <main class="w-5/6 mx-auto">
+        <section>
+            <h2 class="text-2xl uppercase font-semibold my-8">In JavaScript, "var", "let", and "const" are used to declare variables, but they have different scopes and
+                behaviors. Let's discuss the scope and usage of each:</h2>
+            <div>
+                <h2 class="text-2xl capitalize mt-8 ml-5 font-semibold">var</h2>
+                <hr class="w-16 ml-3 bg-black h-2 mb-8 rounded-lg">
+                <li class="text-xl">
+                    "var" declarations are function-scoped. This means that they are accessible throughout the entire
+                    function in which they are declared, regardless of where within the function they are declared.
+                </li>
+                <li class="text-xl">
+                    If declared outside of any function, a "var" "variable becomes globally scoped and is accessible throughout the entire JavaScript program.
+                </li>
+                <li class="text-xl">
+                    variables declared with "var" are also hoisted, which means they are moved to the top of their containing function or global scope during the compilation phase. This can sometimes lead to unexpected behavior if not used carefully.
+                </li>
+
+                <h2 class="my-8 text-xl font-medium">Example:</h2>
+                <div class="box-content">
+                    <img class="mx-auto rounded-lg" src="../resource/blog/var.png" alt="">
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-2xl capitalize mt-8 ml-5 font-semibold">let</h2>
+                <hr class="w-16 ml-3 bg-black h-2 mb-8 rounded-lg">
+                <li class="text-xl">
+                    "let" declarations are block-scoped. This means they are only accessible within the block in which they are defined (including loops, if statements, and functions).
+                </li>
+                <li class="text-xl">
+                    Unlike "var", "let" variables are not hoisted, so you cannot access them before they are declared within their block.
+                </li>
+
+                <h2 class="my-8 text-xl font-medium">Example:</h2>
+                <div class="box-content">
+                    <img class="mx-auto rounded-lg" src="../resource/blog/let.png" alt="">
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-2xl capitalize mt-8 ml-5 font-semibold">const</h2>
+                <hr class="w-24 ml-3 bg-black h-2 mb-8 rounded-lg">
+                <li class="text-xl">
+                    "const" declarations are also block-scoped, just like "let".
+                </li>
+                <li class="text-xl">
+                    However, "const" variables are used for values that should not be reassigned after their initial assignment. Once a "const" variable is assigned a value, it cannot be changed.
+                </li>
+
+                <h2 class="my-8 text-xl font-medium">Example:</h2>
+                <div class="box-content">
+                    <img class="mx-auto rounded-lg" src="../resource/blog/const.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section Starts Here  -->
+    <footer class="w-5/6 mx-auto mt-8">
+        <p class="text-center p-5 bg-gray-400 rounded-t-xl text-2xl font-medium text-white">All Collect form ChatGPT</p>
+    </footer>
+</body>
+
+</html>
